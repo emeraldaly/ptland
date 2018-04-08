@@ -38,21 +38,14 @@
             </div>
         
         </header>
+        <!-- <img src="images/Inbox.jpg"> -->
 
-         <nav>
-          <button type="button" class="btn btn-outline-info my-2 my-sm-0"><a href="registerOrganization.html">Update Availability Preferences</button>
+        <nav>
+          <button type="button" class="btn btn-outline-info my-2 my-sm-0"><a href="updateAvailability.html">Update Availability Preferences</button>
           <button type="button" class="btn btn-outline-info my-2 my-sm-0"><a href="addPatient.html">Add Patient</button>
-          <button type="button" class="btn btn-outline-info my-2 my-sm-0"><a href="registerOrganization.html">Register Organization</button>
-          <!-- Small modal -->
-          <button type="button" class="btn btn-outline-info my-2 my-sm-0" data-toggle="modal" data-target=".bd-example-modal-msg">Messages about Patient</button>
-
-          <div class="modal fade bd-example-modal-msg" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-msg">
-          <div class="modal-content">
-                  <img src="images/Inbox.jpg">
-                </div>
-              </div>
-            </div>
+          
+          
+          
 
 
 
@@ -61,7 +54,7 @@
                     <nav class="navbar navbar-light bg-light">
                         <form class="form-inline">
                         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-info my-2 my-sm-0" type="submit"><a href="#">Search</button>
+                        <button class="btn btn-outline-info my-2 my-sm-0" type="submit"><a href="search.html">Search</button>
                         </form>
                     </nav>
                 </li>
@@ -89,7 +82,23 @@
                     <option value="6">Assisted Living</option>
                   </select>
                 </div>
-                <h3>Who do you serve?</h3>
+                <div class="col-auto my-1">
+                <label for="inputAge" class="col-sm-2 col-form-label">Number of Beds</label>
+                <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputBeds" placeholder="Beds">
+                </div>
+                <div class="col-auto my-1">
+                <label for="inputAge" class="col-sm-2 col-form-label">Beds for Instabook</label>
+                <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputInstabook" placeholder="Instabook">
+                </div>
+                <div class="col-auto my-1">
+                <label for="inputAge" class="col-sm-2 col-form-label">Unique Considerations</label>
+                <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputConsiderations" placeholder="Considerations">
+                </div>
+
+                <h3>Service Preferences</h3>
                 <div class="col-auto my-1">
                 <label for="inputAge" class="col-sm-2 col-form-label">Age</label>
                 <div class="col-sm-10">
@@ -259,6 +268,83 @@
             </form>
           </div> 
         </div>
+
+
+        <div class="row">
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+            <a href="#"><img class="card-img-top" src="images/communityhope.jpg" alt="Community of Hope"></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="#">Community of Hope</a>
+              </h4>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+            <a href="#"><img class="card-img-top" src="images/lutherplace.jpg" alt="Luther Place"></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="#">Luther Place</a>
+              </h4>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+            <a href="#"><img class="card-img-top" src="images/GRM20Exterior.jpg" alt="Gospel Rescue Ministries"></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="#">Gospel Rescue Ministries</a>
+              </h4>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos quisquam, error quod sed cumque, odio distinctio velit nostrum temporibus necessitatibus et facere atque iure perspiciatis mollitia recusandae vero vel quam!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+            <a href="#"><img class="card-img-top" src="images/coh.jpg" alt="Coalition for Homeless"></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="#">Coalition for Homeless</a>
+              </h4>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+            <a href="#"><img class="card-img-top" src="images/centralunion.jpg" alt="Central Union Mission"></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="#">Central Union Mission</a>
+              </h4>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="card h-100">
+            <a href="#"><img class="card-img-top" src="images/ccnv_img.jpg" alt="CCNV"></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="#">CCNV</a>
+              </h4>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque earum nostrum suscipit ducimus nihil provident, perferendis rem illo, voluptate atque, sit eius in voluptates, nemo repellat fugiat excepturi! Nemo, esse.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.row -->
+
+   
+      
+             
+             
+ 
 
         <footer>
           <div class="container">
