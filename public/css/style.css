@@ -9,7 +9,7 @@ ul {
 }
 
 .nav-item-2 {
-  position: fixed;
+  /*position: fixed;*/
   bottom: 0;
   width: 100%;
   background-color: white;
