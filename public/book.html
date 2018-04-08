@@ -39,11 +39,23 @@
         
         </header>
 
-        <nav>
-          <button type="button" class="btn btn-outline-info my-2 my-sm-0">Intake</button>
-          <button type="button" class="btn btn-outline-info my-2 my-sm-0">Discharge</button>
-          <button type="button" class="btn btn-outline-info my-2 my-sm-0">Update Availability Preferences</button>
-          <button type="button" class="btn btn-outline-info my-2 my-sm-0">Add Patient</button>
+         <nav>
+          <button type="button" class="btn btn-outline-info my-2 my-sm-0"><a href="registerOrganization.html">Update Availability Preferences</button>
+          <button type="button" class="btn btn-outline-info my-2 my-sm-0"><a href="addPatient.html">Add Patient</button>
+          <button type="button" class="btn btn-outline-info my-2 my-sm-0"><a href="registerOrganization.html">Register Organization</button>
+          <!-- Small modal -->
+          <button type="button" class="btn btn-outline-info my-2 my-sm-0" data-toggle="modal" data-target=".bd-example-modal-sm">Messages about Patient</button>
+
+          <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-sm">
+          <div class="modal-content">
+                  <img src="images/Inbox.jpg">
+                </div>
+              </div>
+            </div>
+
+
+
             <ul class="nav">
                  <li>
                     <nav class="navbar navbar-light bg-light">
@@ -89,12 +101,12 @@
               <p>4 Beds Available!</p>
               <p>Distance .5 miles</p>
             <!-- Small modal -->
-            <button type="button" class="btn btn-outline-info my-2 my-sm-0" data-toggle="modal" data-target=".bd-example-modal-sm">Book</button>
+            <button type="button" class="btn btn-outline-info my-2 my-sm-0" data-toggle="modal" data-target=".bd-example-modal-book">Book</button>
 
-              <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-sm">
+              <div class="modal fade bd-example-modal-book" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-book">
               <div class="modal-content">
-      Your booking is complete. We look forward to welcoming them.
+                <h3>Your booking is complete. Check your Patient inbox for more info.</h3>
     </div>
   </div>
 </div>

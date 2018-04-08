@@ -39,12 +39,23 @@
         
         </header>
 
-        <nav>
-          <button type="button" class="btn btn-outline-info my-2 my-sm-0">Intake</button>
-          <button type="button" class="btn btn-outline-info my-2 my-sm-0">Register Organization</button>
-          <button type="button" class="btn btn-outline-info my-2 my-sm-0">Discharge</button>
-          <button type="button" class="btn btn-outline-info my-2 my-sm-0">Update Availability Preferences</button>
-          <button type="button" class="btn btn-outline-info my-2 my-sm-0">Add Patient</button>
+         <nav>
+          <button type="button" class="btn btn-outline-info my-2 my-sm-0"><a href="registerOrganization.html">Update Availability Preferences</button>
+          <button type="button" class="btn btn-outline-info my-2 my-sm-0"><a href="addPatient.html">Add Patient</button>
+          <button type="button" class="btn btn-outline-info my-2 my-sm-0"><a href="registerOrganization.html">Register Organization</button>
+          <!-- Small modal -->
+          <button type="button" class="btn btn-outline-info my-2 my-sm-0" data-toggle="modal" data-target=".bd-example-modal-sm">Messages about Patient</button>
+
+          <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-sm">
+          <div class="modal-content">
+                  <img src="images/Inbox.jpg">
+                </div>
+              </div>
+            </div>
+
+
+
             <ul class="nav">
                  <li>
                     <nav class="navbar navbar-light bg-light">
@@ -64,13 +75,22 @@
         <div class="container">
           <button type="button" class="btn btn-outline-info my-2 my-sm-0">Add Patient</button>
           <form>
-              <div class="form-row align-items-center">
-                <div class="form-group row">
+            <div class="col-auto my-1">
+                <label for="inputAge" class="col-sm-2 col-form-label">First Name</label>
+                <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputFName" placeholder="First Name">
+                </div>
+                <div class="col-auto my-1">
+                <label for="inputAge" class="col-sm-2 col-form-label">Last Name</label>
+                <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputLName" placeholder="Last Name">
+                </div>
+              <div class="col-auto my-1">
                 <label for="inputAge" class="col-sm-2 col-form-label">Age</label>
                 <div class="col-sm-10">
                 <input type="email" class="form-control" id="inputAge" placeholder="Age">
                 </div>
-                </div>
+
                 <div class="col-auto my-1">
                   <label class="mr-sm-2" for="inlineFormCustomSelect">Gender</label>
                   <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
@@ -80,70 +100,29 @@
                     <option value="3">Other</option>
                   </select>
                 </div>
+
                 <div class="col-auto my-1">
-                  <label class="mr-sm-2" for="inlineFormCustomSelect">Mental Illness</label>
+                  <label class="mr-sm-2" for="inlineFormCustomSelect">Children</label>
                   <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
                     <option selected>Choose...</option>
                     <option value="1">Yes</option>
                     <option value="2">No</option>
                   </select>
                 </div>
+
                 <div class="col-auto my-1">
-                  <label class="mr-sm-2" for="inlineFormCustomSelect">Mobility</label>
-                  <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                    <option selected>Choose...</option>
-                    <option value="1">Yes</option>
-                    <option value="2">No</option>
-                  </select>
+                <label for="inputAge" class="col-sm-2 col-form-label">Notes</label>
+                <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputAge" placeholder="Diagnosis">
                 </div>
+
                 <div class="col-auto my-1">
-                  <label class="mr-sm-2" for="inlineFormCustomSelect">Homeless</label>
-                  <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                    <option selected>Choose...</option>
-                    <option value="1">Chronic</option>
-                    <option value="2">Acute</option>
-                    <option value="3">No</option>
-                  </select>
-                </div>
-                <div class="col-auto my-1">
-                  <label class="mr-sm-2" for="inlineFormCustomSelect">Smoker</label>
-                  <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                    <option selected>Choose...</option>
-                    <option value="1">Yes</option>
-                    <option value="2">No</option>
-                  </select>
-                </div>
-                <div class="col-auto my-1">
-                  <label class="mr-sm-2" for="inlineFormCustomSelect">Substance Abuse</label>
-                  <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                    <option selected>Choose...</option>
-                    <option value="1">Alcohol</option>
-                    <option value="2">Heroin</option>
-                    <option value="3">Crack</option>
-                    <option value="4">None</option>
-                  </select>
-                </div>
-                <div class="col-auto my-1">
-                  <label class="mr-sm-2" for="inlineFormCustomSelect">Veteran</label>
-                  <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                    <option selected>Choose...</option>
-                    <option value="1">Yes</option>
-                    <option value="2">No</option>
-                  </select>
-                </div>
-                 <div class="col-auto my-1">
-                  <label class="mr-sm-2" for="inlineFormCustomSelect">Insurance</label>
-                  <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                    <option selected>Choose...</option>
-                    <option value="1">Yes</option>
-                    <option value="2">No</option>
-                  </select>
-                </div>
-                <div class="col-auto my-1">
-                  <button type="submit" class="btn btn-primary"><a href="book.html">Submit</button>
+                  <button type="submit" class="btn btn-outline-info my-2 my-sm-0"><a href="search.html">Create</button>
                 </div>
               </div>
-            </form>
+            </div>
+          </form>
+
             
         </div>
       
